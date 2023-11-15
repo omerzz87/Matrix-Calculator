@@ -1,2 +1,2 @@
-# Matrix-Calculator
-A neat Calculator made with HTML, JS and CSS
+# Matrix.calculator
+Neat calculator, made in HTML,JS and CSS

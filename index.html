@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+</head>
+<script src="calc.js"></script>
+<link rel="stylesheet" href="cool.css">
+<body>
+    <audio id="click-sound" src="mixkit-click-melodic-tone-1129.wav" preload="auto"></audio>
+    <audio id="equals-sound" src="mixkit-select-click-1109.wav" preload="auto"></audio>
+    <div class="textbox">
+        <h1>Matrix Calculator</h1>
+    </div>
+    <div class="container">
+        <div class="container">
+            <input type="text" id="result" value="0" disabled>
+            
+            
+            <button onclick="printdigit('7')">7</button> 
+            <button onclick="printdigit('8')">8</button>
+            <button onclick="printdigit('9')">9</button>
+            <button onclick="printdigit('4')">4</button>
+            <button onclick="printdigit('5')">5</button>
+            <button onclick="printdigit('6')">6</button>
+            <button onclick="printdigit('1')">1</button>
+            <button onclick="printdigit('2')">2</button>
+            <button onclick="printdigit('3')">3</button>
+            <button onclick="printdigit('0')">0</button>
+            <button class="opreators" onclick="printdigit('+')">+</button>
+            <button class="opreators" onclick="printdigit('-')">-</button>
+            <button class="opreators" onclick="printdigit('.')">.</button>
+            <button class="opreators" onclick="printdigit('*')">*</button>
+            <button class="opreators" onclick="printdigit('/')">/</button>
+            <button class="clear-shit"onclick="clear_result()">C</button>
+            <button class="deleteDigit"onclick="deleteDigit()">DEL</button>
+            <button class="opreators" onclick="printdigit('^')">^</button>
+            <button class="equals-button" onclick="calculate()" type="submit">=</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
