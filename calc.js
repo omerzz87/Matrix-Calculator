@@ -72,8 +72,11 @@ function calculate() {
     try {
         var calculation = result.value.replace('^', '**');
         var output = eval(calculation);
+        if (calculation === "9/11") {
+            result.value = " ALLAHU AKBAR";
+            return;}
         if (output.toString().length > 10) {
-            result.value = "bro you're dumb";
+            result.value = "Too many digits";
         } else {
             result.value = output;
         }
@@ -85,9 +88,11 @@ function calculate() {
 function printdigit(digit) { 
     playSound("click-sound");
     var result = document.getElementById("result");
-    if (result.value === "Error") {
+    if (result.value === "Error") { 
         result.value = '';
+        
     }
+    
     if (result.value.length < 10) {
         var numbers = result.value.split(/[\+\-\*\/]/);
         var currentNumber = numbers[numbers.length - 1];
